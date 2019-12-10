@@ -3,7 +3,7 @@ import { Link, Redirect} from 'react-router-dom';
 import { connect, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import Dashboard from '../dashboard/Dashboard';
-import { loadUser,register } from '../../actions/auth';
+
 //import { getCurrentProfile } from '../../actions/profile';
 import { getCurrentProfile } from '../../actions/profile';
 

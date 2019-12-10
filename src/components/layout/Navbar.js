@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import {connect} from 'react-redux';
-import {logout} from '../../actions/auth';
 import PropTypes from 'prop-types';
 
 
@@ -35,7 +34,7 @@ const Navbar = () => {
           <li>FAQ</li>
         </ul>
         <ul className="navbar-right">
-          <li onClick={(e)=>{alert("This Service Isn't Available!")}}><i className="fas fa-hand-holding-usd" >Donate</i></li>
+          <li onClick={(e)=>{alert("This Service Isn't Available!!")}}><i className="fas fa-hand-holding-usd" >Donate</i></li>
           
     
         </ul>

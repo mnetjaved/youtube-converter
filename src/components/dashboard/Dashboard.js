@@ -47,15 +47,12 @@ const Dashboard = ({
        ldr:true   
       });
 
-      const {ldr} = formData;
 
-// useEffect(() => {
-// getCurrentProfile();
-// }, []);
- 
+   const server = `https://youtubeonlinevideoconverter.herokuapp.com/`;
+
  const audio_download = (e) => {
    let name = e.target.name;
-   const server = `http://localhost:5000/`;
+   
     let url = server+`api/v1/audio/yt-audio-${name}/${profile.videoid}`
     const link = document.createElement('a');
      link.href = url;  
@@ -67,12 +64,12 @@ const Dashboard = ({
             lk.href = '/';
             document.body.appendChild(lk);
             lk.click();
-       }, 3000);
+       }, 4000);
   }
 
 const video_download = (e) => {
   let name = e.target.name;
-  const server = `http://localhost:5000/`;
+ 
    let url = server+`api/v1/video/yt-video-${name}/${profile.videoid}`
    const link = document.createElement('a');
     link.href = url;  
@@ -84,7 +81,7 @@ const video_download = (e) => {
          lk.href = '/';
          document.body.appendChild(lk);
          lk.click();
-    }, 3000);
+    }, 4000);
 }
 
 // loading ? <Spinner />:

@@ -7,16 +7,17 @@ import {
 } from './types';
 
 
+
 export const getCurrentProfile = (videoUrl) => async dispatch => {
  
-
+    const Server = "https://youtubeonlinevideoconverter.herokuapp.com/"
     
     const params = {
         videoUrl: videoUrl,
     };
     
     try{
-        const res = await axios.get('http://localhost:5000/api/v1/data/ytgetdata',{params});
+        const res = await axios.get(`${Server}api/v1/data/ytgetdata`,{params});
         console.log("prf ok",res.data)
         dispatch({
             type : GET_PROFILE,
