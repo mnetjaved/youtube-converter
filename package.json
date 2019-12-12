@@ -2,7 +2,7 @@
   "name": "react-video-converter",
   "version": "0.1.0",
   "private": true,
- 
+  "homepage": "https://youtube-onlinevideoconverter.com",
   "dependencies": {
     "axios": "^0.19.0",
     "file-saver": "^2.0.2",
@@ -27,7 +27,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-  
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
